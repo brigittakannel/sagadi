@@ -1,0 +1,305 @@
+@font-face {
+  font-family: NewsGothicBold;
+  src: url("NewGotBd.ttf");
+}
+@font-face {
+  font-family: NewsGothicRoman;
+  src: url("NewGotRm.ttf");
+}
+@font-face {
+  font-family: Geogrotesque;
+  src: url("Geogtq-Sb.otf");
+}
+
+body{
+  background-image: url("taust.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+a{
+  text-decoration: none;
+}
+.langs{
+  position: absolute;
+  top: 28px;
+  right: 281px;
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  justify-content: space-around;
+  z-index: -2;
+  & .lang{
+    text-align: center;
+    width: 88px;
+    height: 43px;
+    background-color: #b3b3b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & p{
+      color: #fff;
+      font-family: NewsGothicRoman;
+      font-size: 24px;
+    }
+    &.active{
+      background-color: #edae2f;
+      & p{
+        font-family: NewsGothicBold;
+        color: #fff;
+      }
+    }
+  }
+}
+strong{
+  font-family: NewsGothicBold;
+}
+.button{
+  background-image: url("ring.svg");
+  background-repeat: no-repeat;
+  background-size: 78px;
+  width: 78px;
+  height: 78px;
+  position: absolute;
+  text-align: center;
+  & p{
+    font-family: Geogrotesque;
+    color: #fff;
+    font-size: 24px;
+    margin-top: 50px;
+  }
+  &.active{
+    background-image: url("aktiivne-ring.svg") !important;
+  }
+  &.clicked{
+    background-image: url("klikitud.svg");
+  }
+  & .overlay-trig{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: -25px;
+    & .overlay{
+      display: none;
+      z-index: -1;
+      & .overlay-wrapper{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        border-radius: 50%;
+        background-color: #fff;
+        border: 8px solid #edae2f;
+        position: relative;
+        & .text{
+          padding: 40px;
+          & p{
+            font-family: NewsGothicRoman;
+            color: #000;
+            font-size: 20px;
+          }
+        }
+        & img.close-btn{
+          position: absolute;
+          width: 40px;
+          height: 40px;
+          top: 56px;
+          right: 13px;
+        }
+      }
+      &.active{
+        display: flex;
+      }
+      &.nonactive{
+        display: none;
+      }
+    }
+  }
+  &#btn-1{
+    top: 180px;
+    left: 122px;
+    & .overlay{
+      position: absolute;
+      width: 370px;
+      height: 370px;
+      top: -154px;
+      left: 38px;
+    }
+  }
+  &#btn-2{
+    top: 91px;
+    left: 472px;
+    & .overlay{
+      position: absolute;
+      width: 372px;
+      height: 372px;
+      top: -14px;
+      left: -35px;
+    }
+  }
+  &#btn-3{
+    top: 306px;
+    left: 720px;
+    & .overlay{
+      position: absolute;
+      width: 372px;
+      height: 372px;
+      top: -270px;
+      left: 27px;
+    }
+  }
+  &#btn-4{
+    top: 316px;
+    right: 585px;
+    & .overlay{
+      position: absolute;
+      width: 372px;
+      height: 372px;
+      top: -270px;
+      left: -323px;
+    }
+  }
+  &#btn-5{
+    top: 261px;
+    right: 240px;
+    & .overlay{
+      position: absolute;
+      width: 372px;
+      height: 372px;
+      top: -270px;
+      left: -300px;
+    }
+  }
+  &#btn-6{
+    top: 430px;
+    left: 380px;
+    & .overlay{
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      top: -195px;
+      left: -379px;
+    }
+  }
+  &#btn-7{
+    top: 545px;
+    left: 692px;
+    & .overlay{
+      position: absolute;
+      width: 372px;
+      height: 372px;
+      top: -221px;
+      left: 45px;
+    }
+  }
+  &#btn-8{
+    top: 621px;
+    right: 855px;
+    & .overlay{
+      position: absolute;
+      width: 372px;
+      height: 372px;
+      top: -357px;
+      left: -144px;
+    }
+  }
+  &#btn-9{
+    top: 576px;
+    right: 633px;
+    & .overlay{
+      position: absolute;
+      width: 372px;
+      height: 372px;
+      top: -365px;
+      left: -146px;
+    }
+  }
+  &#btn-10{
+    top: 440px;
+    right: 331px;
+    & .overlay{
+      position: absolute;
+      width: 372px;
+      height: 372px;
+      top: -315px;
+      left: -36px;
+    }
+  }
+  &#btn-11{
+    top: 797px;
+    left: 160px;
+    & .overlay{
+      position: absolute;
+      width: 372px;
+      height: 372px;
+      top: -326px;
+      left: -37px;
+    }
+  }
+  &#btn-12{
+    top: 910px;
+    left: 538px;
+    & .overlay{
+      position: absolute;
+      width: 372px;
+      height: 372px;
+      top: -338px;
+      left: -247px;
+    }
+  }
+  &#btn-13{
+    top: 729px;
+    left: 843px;
+    & .overlay{
+      position: absolute;
+      width: 465px;
+      height: 465px;
+      top: -458px;
+      left: -192px;
+    }
+  }
+  &#btn-14{
+    top: 868px;
+    left: 893px;
+    & .overlay{
+      position: absolute;
+      width: 465px;
+      height: 465px;
+      top: -417px;
+      left: -83px;
+    }
+  }
+  &#btn-15{
+    top: 906px;
+    right: 582px;
+    & .overlay{
+      position: absolute;
+      width: 372px;
+      height: 372px;
+      top: -364px;
+      left: -148px;
+    }
+  }
+  &#btn-16{
+    top: 751px;
+    right: 273px;
+    & .overlay{
+      position: absolute;
+      width: 372px;
+      height: 372px;
+      top: -305px;
+      left: -273px;
+    }
+  }
+}
+.index{
+  z-index: -2;
+}
+.higher{
+  z-index: 1;
+}
+
+.hide{
+  & .overlay{
+    display: none;
+  }
+}

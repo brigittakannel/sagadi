@@ -1,0 +1,301 @@
+@font-face {
+  font-family: NewsGothicBold;
+  src: url("NewGotBd.ttf");
+}
+@font-face {
+  font-family: NewsGothicRoman;
+  src: url("NewGotRm.ttf");
+}
+@font-face {
+  font-family: Geogrotesque;
+  src: url("Geogtq-Sb.otf");
+}
+body {
+  background-image: url("taust.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+.langs {
+  position: absolute;
+  top: 28px;
+  right: 281px;
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  justify-content: space-around;
+  z-index: -2;
+}
+.langs .lang {
+  text-align: center;
+  width: 88px;
+  height: 43px;
+  background-color: #b3b3b3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.langs .lang p {
+  color: #fff;
+  font-family: NewsGothicRoman;
+  font-size: 24px;
+}
+.langs .lang.active {
+  background-color: #edae2f;
+}
+.langs .lang.active p {
+  font-family: NewsGothicBold;
+  color: #fff;
+}
+strong {
+  font-family: NewsGothicBold;
+}
+.button {
+  background-image: url("ring.svg");
+  background-repeat: no-repeat;
+  background-size: 78px;
+  width: 78px;
+  height: 78px;
+  position: absolute;
+  text-align: center;
+}
+.button p {
+  font-family: Geogrotesque;
+  color: #fff;
+  font-size: 24px;
+  margin-top: 50px;
+}
+.button.active {
+  background-image: url("aktiivne-ring.svg") !important;
+}
+.button.clicked {
+  background-image: url("klikitud.svg");
+}
+.button .overlay-trig {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: -25px;
+}
+.button .overlay-trig .overlay {
+  display: none;
+  z-index: -1;
+}
+.button .overlay-trig .overlay .overlay-wrapper {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 8px solid #edae2f;
+  position: relative;
+}
+.button .overlay-trig .overlay .overlay-wrapper .text {
+  padding: 40px;
+}
+.button .overlay-trig .overlay .overlay-wrapper .text p {
+  font-family: NewsGothicRoman;
+  color: #000;
+  font-size: 20px;
+}
+.button .overlay-trig .overlay .overlay-wrapper img.close-btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 56px;
+  right: 13px;
+}
+.button .overlay-trig .overlay.active {
+  display: flex;
+}
+.button .overlay-trig .overlay.nonactive {
+  display: none;
+}
+.button#btn-1 {
+  top: 180px;
+  left: 122px;
+}
+.button#btn-1 .overlay {
+  position: absolute;
+  width: 370px;
+  height: 370px;
+  top: -154px;
+  left: 38px;
+}
+.button#btn-2 {
+  top: 91px;
+  left: 472px;
+}
+.button#btn-2 .overlay {
+  position: absolute;
+  width: 372px;
+  height: 372px;
+  top: -14px;
+  left: -35px;
+}
+.button#btn-3 {
+  top: 306px;
+  left: 720px;
+}
+.button#btn-3 .overlay {
+  position: absolute;
+  width: 372px;
+  height: 372px;
+  top: -270px;
+  left: 27px;
+}
+.button#btn-4 {
+  top: 316px;
+  right: 585px;
+}
+.button#btn-4 .overlay {
+  position: absolute;
+  width: 372px;
+  height: 372px;
+  top: -270px;
+  left: -323px;
+}
+.button#btn-5 {
+  top: 261px;
+  right: 240px;
+}
+.button#btn-5 .overlay {
+  position: absolute;
+  width: 372px;
+  height: 372px;
+  top: -270px;
+  left: -300px;
+}
+.button#btn-6 {
+  top: 430px;
+  left: 380px;
+}
+.button#btn-6 .overlay {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  top: -195px;
+  left: -379px;
+}
+.button#btn-7 {
+  top: 545px;
+  left: 692px;
+}
+.button#btn-7 .overlay {
+  position: absolute;
+  width: 372px;
+  height: 372px;
+  top: -221px;
+  left: 45px;
+}
+.button#btn-8 {
+  top: 621px;
+  right: 855px;
+}
+.button#btn-8 .overlay {
+  position: absolute;
+  width: 372px;
+  height: 372px;
+  top: -357px;
+  left: -144px;
+}
+.button#btn-9 {
+  top: 576px;
+  right: 633px;
+}
+.button#btn-9 .overlay {
+  position: absolute;
+  width: 372px;
+  height: 372px;
+  top: -365px;
+  left: -146px;
+}
+.button#btn-10 {
+  top: 440px;
+  right: 331px;
+}
+.button#btn-10 .overlay {
+  position: absolute;
+  width: 372px;
+  height: 372px;
+  top: -315px;
+  left: -36px;
+}
+.button#btn-11 {
+  top: 797px;
+  left: 160px;
+}
+.button#btn-11 .overlay {
+  position: absolute;
+  width: 372px;
+  height: 372px;
+  top: -326px;
+  left: -37px;
+}
+.button#btn-12 {
+  top: 910px;
+  left: 538px;
+}
+.button#btn-12 .overlay {
+  position: absolute;
+  width: 372px;
+  height: 372px;
+  top: -338px;
+  left: -247px;
+}
+.button#btn-13 {
+  top: 729px;
+  left: 843px;
+}
+.button#btn-13 .overlay {
+  position: absolute;
+  width: 465px;
+  height: 465px;
+  top: -458px;
+  left: -192px;
+}
+.button#btn-14 {
+  top: 868px;
+  left: 893px;
+}
+.button#btn-14 .overlay {
+  position: absolute;
+  width: 465px;
+  height: 465px;
+  top: -417px;
+  left: -83px;
+}
+.button#btn-15 {
+  top: 906px;
+  right: 582px;
+}
+.button#btn-15 .overlay {
+  position: absolute;
+  width: 372px;
+  height: 372px;
+  top: -364px;
+  left: -148px;
+}
+.button#btn-16 {
+  top: 751px;
+  right: 273px;
+}
+.button#btn-16 .overlay {
+  position: absolute;
+  width: 372px;
+  height: 372px;
+  top: -305px;
+  left: -273px;
+}
+.index {
+  z-index: -2;
+}
+.higher {
+  z-index: 1;
+}
+.hide .overlay {
+  display: none;
+}
