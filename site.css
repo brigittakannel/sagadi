@@ -180,6 +180,9 @@ strong {
   top: -195px;
   left: -379px;
 }
+.button#btn-6 .overlay .overlay-wrapper img.close-btn {
+  right: 30px;
+}
 .button#btn-7 {
   top: 545px;
   left: 692px;
@@ -254,8 +257,15 @@ strong {
   position: absolute;
   width: 465px;
   height: 465px;
-  top: -458px;
+  top: -472px;
   left: -192px;
+}
+.button#btn-13 .overlay .overlay-wrapper img.close-btn {
+  right: 30px;
+}
+.button#btn-13 .overlay-trig .overlay .overlay-wrapper {
+  width: 105%;
+  height: 105%;
 }
 .button#btn-14 {
   top: 868px;
@@ -267,6 +277,10 @@ strong {
   height: 465px;
   top: -417px;
   left: -83px;
+}
+.button#btn-14 .overlay .overlay-wrapper img.close-btn {
+  top: 48px;
+  right: 37px;
 }
 .button#btn-15 {
   top: 906px;
